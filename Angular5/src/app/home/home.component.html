@@ -1,8 +1,26 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo center">
-      <i class="material-icons">cloud</i>Dotnet Mob App</a>
+    <a href="#" class="brand-logo left">
+      <i class="material-icons">cloud</i>Gerenciador de Condomínios</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a (click)="Logout()">Veiculos</a>
+      </li>
+      <li>
+        <a (click)="Logout()">Moradores</a>
+      </li>
+      <li>
+        <a (click)="Logout()">Visitantes</a>
+      </li>
+      <li>
+        <a (click)="Logout()">Movimentação</a>
+      </li>
+      <li>
+        <a (click)="Logout()">Ajuda</a>
+      </li>
+      <li>
+        <a (click)="Logout()">Sobre</a>
+      </li>
       <li  *ngIf="userService.roleMatch(['Admin'])">
         <a routerLink="/adminPanel">Admin Panel</a>
       </li>

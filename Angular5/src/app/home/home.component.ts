@@ -10,7 +10,7 @@ import { UserService } from '../shared/user.service';
 export class HomeComponent implements OnInit {
   userClaims: any;
 
-  constructor(private router: Router, private userService: UserService) { }
+  constructor(private router: Router, public userService: UserService) { }
 
   ngOnInit() {
     this.userService.getUserClaims().subscribe((data: any) => {
@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
 
     });
 
-    if(this.userService.roleMatch(['Author']))
+    if (this.userService.roleMatch(['Author']))
     {
-      //do the operation
+      // do the operation
     }
   }
 

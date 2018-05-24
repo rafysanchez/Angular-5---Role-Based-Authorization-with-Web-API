@@ -19,6 +19,6 @@ export const appRoutes: Routes = [
         path: 'login', component: UserComponent,
         children: [{ path: '', component: SignInComponent }]
     },
-    { path : '', redirectTo:'/login', pathMatch : 'full'}
-    
+    { path : '', redirectTo: '/login', pathMatch : 'full'}
+
 ];
