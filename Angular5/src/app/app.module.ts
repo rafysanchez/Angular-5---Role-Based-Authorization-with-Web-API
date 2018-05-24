@@ -17,6 +17,11 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { DemoComponent } from './Components/demo/demo.component';
+import { AjudaComponent } from './Components/ajuda/ajuda.component';
+import { MoradorComponent } from './Components/morador/morador.component';
+import { VisitanteComponent } from './Components/visitante/visitante.component';
+import { SobreComponent } from './Components/sobre/sobre.component';
 
 
 @NgModule({
@@ -27,7 +32,12 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
     SignInComponent,
     HomeComponent,
     AdminPanelComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    DemoComponent,
+    AjudaComponent,
+    MoradorComponent,
+    VisitanteComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
