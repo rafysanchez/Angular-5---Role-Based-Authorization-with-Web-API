@@ -22,6 +22,7 @@ import { AjudaComponent } from './Components/ajuda/ajuda.component';
 import { MoradorComponent } from './Components/morador/morador.component';
 import { VisitanteComponent } from './Components/visitante/visitante.component';
 import { SobreComponent } from './Components/sobre/sobre.component';
+import { VeiculoComponent } from './Components/veiculo/veiculo.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { SobreComponent } from './Components/sobre/sobre.component';
     AjudaComponent,
     MoradorComponent,
     VisitanteComponent,
-    SobreComponent
+    SobreComponent,
+    VeiculoComponent
   ],
   imports: [
     BrowserModule,

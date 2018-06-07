@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ajuda',
+  selector: 'app-root',
   templateUrl: './ajuda.component.html',
   styleUrls: ['./ajuda.component.css']
 })

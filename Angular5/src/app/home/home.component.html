@@ -1,35 +1,38 @@
 <nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo left">
-      <i class="material-icons">cloud</i>Gerenciador de Condomínios</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li>
-        <a (click)="Logout()">Veiculos</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Moradores</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Visitantes</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Movimentação</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Ajuda</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Sobre</a>
-      </li>
-      <li  *ngIf="userService.roleMatch(['Admin'])">
-        <a routerLink="/adminPanel">Admin Panel</a>
-      </li>
-      <li>
-        <a (click)="Logout()">Logout</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo left">
+        <i class="material-icons">cloud</i>Gerenciador de Condomínios</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/veiculo">Veiculos</a>
+        </li>
+        <li>
+          <a routerLink="/morador">Moradores</a>
+        </li>
+        <li>
+          <a routerLink="/visitante">Visitantes</a>
+        </li>
+        <li>
+          <a routerLink="/movimentacao">Movimentação</a>
+        </li>
+        <li>
+          <a routerLink="/ajuda">Ajuda</a>
+        </li>
+        <li>
+          <a routerLink="/sobre">Sobre</a>
+        </li>
+        <li  *ngIf="userService.roleMatch(['Admin'])">
+          <a routerLink="/adminPanel">Admin Panel</a>
+        </li>
+        <li>
+          <a (click)="Logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
 <div class="row" *ngIf="userClaims">
   <div class="col s12 m7">
     <div class="card">

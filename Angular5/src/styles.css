@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.menu {
+  background-color: white;
+}
+
+.branco{
+  background-color:white;
+}
 button.btn-submit{
     background-color: #38547b;
     color: #fff;
@@ -33,4 +40,14 @@ div.error-message i{
 
 .tabs .tab a.active{
     background-color: #fff !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
